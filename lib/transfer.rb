@@ -21,6 +21,7 @@ class Transfer
   
   def execute_transaction
     if valid?
+      Transfer.new(sender, receiver, amount)
       @status = 'complete'
     end
   end
