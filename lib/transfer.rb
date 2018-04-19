@@ -27,6 +27,8 @@ class Transfer
         @status = 'complete'
       end
     end
+    if !(valid?)
+      
   end
   
 end
